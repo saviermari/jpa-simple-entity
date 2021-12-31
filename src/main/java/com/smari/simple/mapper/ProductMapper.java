@@ -14,6 +14,7 @@ public class ProductMapper {
                 entity.setId(model.getId());
             }
             entity.setName(model.getName());
+            entity.setPartNumber(model.getPartNumber());
         }
         return entity;
     }
@@ -25,6 +26,7 @@ public class ProductMapper {
                 model.setId(entity.getId());
             }
             model.setName(entity.getName());
+            model.setPartNumber(entity.getPartNumber());
         }
         return model;
     }

@@ -16,6 +16,9 @@ public class Product {
     @Column(name = "product_name")
     private String name;
 
+    @Column(name = "part_number",length=50, nullable=false, unique=true)
+    private String partNumber;
+
     public Long getId() {
         return id;
     }
@@ -30,5 +33,13 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPartNumber() {
+        return partNumber;
+    }
+
+    public void setPartNumber(String partNumber) {
+        this.partNumber = partNumber;
     }
 }
