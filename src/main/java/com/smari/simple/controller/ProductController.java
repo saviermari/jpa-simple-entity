@@ -31,7 +31,7 @@ public class ProductController {
         if(model != null) if (null == model.getId()) {
             model.setId(product.getId());
         }
-        return service.createProduct(model);
+        return service.updateProduct(model);
     }
 
     @DeleteMapping("/products/{id}")
